@@ -3,7 +3,7 @@ import Tooltip from "@mui/material/Tooltip";
 import IconButton from "@mui/material/IconButton";
 export default function UserPanel({ img, name, email }) {
   return (
-    <div className="account">
+    <div className="user-panel">
       <div className="photo">
         <img alt={name} src={img} />
       </div>

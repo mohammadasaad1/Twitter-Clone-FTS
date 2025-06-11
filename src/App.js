@@ -1,10 +1,11 @@
 import { LeftSide } from "./components";
 import "./App.css";
+import HomePage from "./components/homePage/HomePage";
 function App() {
   return (
     <div className="app">
       <LeftSide />
-      <div>Home Page</div>
+      <HomePage />
       <div>Rightside</div>
     </div>
   );

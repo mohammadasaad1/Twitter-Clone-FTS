@@ -39,11 +39,15 @@ export default function LeftSide() {
             <IconButton Icon={Profile} name={"Profile"} />
             <IconButton Icon={More} name={"More"} />
           </ul>
+          <Fab
+            variant="extended"
+            color="primary"
+            sx={{ pl: "80px", pr: "80px" }}
+          >
+            <PostAddIcon />
+            Post
+          </Fab>
         </nav>
-        <Fab variant="extended" color="primary" sx={{ pl: "80px", pr: "80px" }}>
-          <PostAddIcon />
-          Post
-        </Fab>
 
         <footer>
           <UserPanel
