@@ -2,6 +2,7 @@ import { LeftSide } from "./components";
 import "./App.css";
 import HomePage from "./components/homePage/HomePage";
 import { Box } from "@mui/material";
+import RightSidebar from "./components/rightSideBar/RightSidebar";
 function App() {
   return (
     <Box
@@ -15,7 +16,17 @@ function App() {
       <Box sx={{ flexGrow: 1, overflowY: "auto" }}>
         <HomePage />
       </Box>
-      <Box>Rightside</Box>
+      <Box
+        sx={{
+          py: 2,
+          px: 2,
+          display: "flex",
+          flexDirection: "column",
+          gap: 3,
+        }}
+      >
+        <RightSidebar />
+      </Box>
     </Box>
   );
 }
